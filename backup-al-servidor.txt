@@ -1,0 +1,33 @@
+=========================================================================================
+Se entiende que el backup copiado a la unidad externa procede de '/home/oficina/Respaldo'
+por lo tanto el backup debe ser copiado a la misma ubicación del Servidor
+=========================================================================================
+
+------------------------ESTO APLICA CUANDO EL SERVIDOR ES FISICO-------------------------
+
+mkdir /media/HdApollo320Gb
+cd /media/HdApollo320Gb
+
+# Para ver los dispositivos detectados
+ls -l /dev/sd*
+
+# Para ver el sistema de archivos del dispositivo (ejem: NTFS, FAT, ext4, etc.)
+lsblk -f   o   fdisk -l
+
+# '/dev/sdb1' es el dispositivo externo
+mount /dev/sdb1 /media/HdApollo320Gb			==> para montar el dispositivo externo
+
+# SI Linux no reconoce sistema de archivos NTFS, entonces:
+dnf install ntfs-3g
+
+# Y PROCEDER A COPIAR EL BACKUP AL SERVIDOR
+
+
+
+# Para desmontar el dispositivo externo
+# (se debe estar fuera de la carpeta montada '/media/HdApollo320Gb')
+umount /dev/sdb1
+
+------------------------ESTO APLICA CUANDO EL SERVIDOR ES VIRTUAL------------------------
+
+Los backups deberían copiarse al Servidor por el 'Explorador de Windows'
