@@ -1,7 +1,7 @@
 VIDEO MANUAL: https://youtu.be/E86pAbDJ6mo
 
-EN PLENA INSTALACIÓN:
+EN PLENA INSTALACIÓN (tener a la mano las contraseñas que le asignará):
 1. Nombre de equipo: ServerDevelop (máximo 15 caracteres)
-2. Contraseña del usuario 'root' es 'ServerLinux159357' y poner check de 'permitir el acceso SSH'
-3. El primer usuario a crear se debe llamar solamente 'admin' (contraseña desarrollo: Admin123)
+2. Contraseña del usuario 'root' es '????????' y poner check de 'permitir el acceso SSH'
+3. El primer usuario a crear se debe llamar solamente 'admin' (contraseña desarrollo: ????????)
 4. Al configurar SOFTWARE, en Selección de Software seleccionar 'Server'
