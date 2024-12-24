@@ -1,0 +1,7 @@
+1. Para generar los backups ejecutar '/home/oficina/respaldo.sh'
+
+2. Con el 'Explorador de Windows' copiar a la unidad externa el contenido de:
+/home/oficina/Respaldo
+
+3. Opcionalmente, conectando la unidad externa al Servidor copiar el contenido de:
+/home/oficina/CustodiaCpe
