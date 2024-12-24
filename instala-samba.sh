@@ -17,7 +17,6 @@ firewall-cmd --zone=public --permanent --add-port=137/tcp   #* abre un puerto q 
 firewall-cmd --zone=public --permanent --add-port=138/tcp   #* abre otro puerto q usa samba
 firewall-cmd --reload                                       #* se recarga el firewall para q haga efecto los cambios
 firewall-cmd --list-all                                     #* para verificar los servicios y puertos abiertos
-iptables -nL | grep ACCEPT | grep NEW                       #* otra forma de verificar los puertos abiertos
 
 #* CONFIGURA
 

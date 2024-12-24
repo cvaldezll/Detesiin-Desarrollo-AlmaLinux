@@ -83,3 +83,8 @@ shutdown -f                                         #* -f    => apaga sin pregun
 shutdown 20:50                                      #* 20:50 => apaga en la hora indicada
 shutdown 5                                          #* 5     => apaga en N minutos
 shutdown -c                                         #* -c    => cancela el apagado
+
+
+#* Agrega Alias en Apache con `root`: ./apache-alias.sh ALIAS DIRECTORIO
+#* DIRECTORIO tiene que se ruta completa y tiene que estar creado previamente
+#* Ejemplo: ./apache-alias.sh prueba /usr/share/WebsDesarrollo/prueba/
