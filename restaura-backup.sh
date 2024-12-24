@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [[ ! "$1" == "ACEPTAR" ]]; then
     lcNombArchSH=$(basename "$0")
     echo "Ejecutar así: $lcNombArchSH ACEPTAR"
