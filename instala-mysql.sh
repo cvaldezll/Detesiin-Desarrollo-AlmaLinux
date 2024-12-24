@@ -4,9 +4,9 @@ if [[ ! "$1" == "ACEPTAR" ]]; then
     exit 1
 fi
 
-yum install mysql-server -y # instala
-systemctl start mysqld      # inicia
-systemctl status mysqld     # estado
+yum install mysql-server -y #* instala
+systemctl start mysqld      #* inicia
+systemctl status mysqld     #* estado
 
 
 echo "A continuación se debe configurar manualmente MySQL..."
@@ -15,7 +15,7 @@ echo "Aparecerá unas preguntas para dehabilitar cosas, leer bién las preguntas
 mysql_secure_installation
 
 
-# Pone como inicio automático cuando inicie el S.O.
+#* Pone como inicio automático cuando inicie el S.O.
 systemctl enable mysqld
 systemctl enable mysqld
 
@@ -25,8 +25,8 @@ lcPort="3306"
 read -p "Puerto MySQL [$lcPort]: " lcPortNew
 lcPort=${lcPortNew:-$lcPort}
 firewall-cmd --zone=public --permanent --add-port=$lcPort/tcp
-firewall-cmd --reload       # se recarga el firewall para q haga efecto los cambios
-firewall-cmd --list-all     # para verificar los servicios y puertos abiertos
+firewall-cmd --reload       #* se recarga el firewall para q haga efecto los cambios
+firewall-cmd --list-all     #* para verificar los servicios y puertos abiertos
 
 
 echo "A continuación se creará una BD y su usuario de acceso remoto..."

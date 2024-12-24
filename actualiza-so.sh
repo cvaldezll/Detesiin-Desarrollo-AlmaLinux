@@ -4,9 +4,9 @@ if [[ ! "$1" == "ACEPTAR" ]]; then
     exit 1
 fi
 
-# Actualiza S.O.
+#* Actualiza S.O.
 dnf check-update
 dnf update
 
-# Actualiza repositorio base
+#* Actualiza repositorio base
 yum install epel-release -y

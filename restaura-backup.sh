@@ -4,7 +4,7 @@ if [[ ! "$1" == "ACEPTAR" ]]; then
     exit 1
 fi
 
-# Se asigna permiso 777 para que desde Windows se pueda usar los archivos con el usuario Samba (ooo => permisos de otros)
+#* Se asigna permiso 777 para que desde Windows se pueda usar los archivos con el usuario Samba (ooo => permisos de otros)
 
 lcArchZip="/home/oficina/Respaldo/Desarrollo.zip"
 if [ -f "$lcArchZip" ]; then
