@@ -92,4 +92,4 @@ shutdown -c                                         #* -c    => cancela el apaga
 
 #* Ejecuta Servidor Uvicorn
 cd /var/www/html/                                   #* ubica la carpeta del archivo de Python
-uvicorn info:app --host 0.0.0.0 --port 8000         #* ejecuta el archivo info.py
+uvicorn info:app --host 0.0.0.0 --port 8000         #* ejecuta el archivo info.py en el puerto 8000

@@ -41,9 +41,11 @@ fi
 pip3 list
 
 
-#* Abre el puerto que normalmente escucha Uvicorn
-
-firewall-cmd --zone=public --permanent --add-port=8000/tcp
+echo "A continuación se abrirá el puerto que escuchará Uvicorn..."
+lcPort="8000"
+read -p "Puerto Uvicorn [$lcPort]: " lcPortNew
+lcPort=${lcPortNew:-$lcPort}
+firewall-cmd --zone=public --permanent --add-port=$lcPort/tcp
 firewall-cmd --reload                                       #* se recarga el firewall para q haga efecto los cambios
 firewall-cmd --list-all                                     #* para verificar los servicios y puertos abiertos
 
