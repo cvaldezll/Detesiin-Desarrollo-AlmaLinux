@@ -88,3 +88,8 @@ shutdown -c                                         #* -c    => cancela el apaga
 #* Agrega Alias en Apache con `root`: ./apache-alias.sh ALIAS DIRECTORIO
 #* DIRECTORIO tiene que se ruta completa y tiene que estar creado previamente
 #* Ejemplo: ./apache-alias.sh prueba /usr/share/WebsDesarrollo/prueba/
+
+
+#* Ejecuta Servidor Uvicorn
+cd /var/www/html/                                   #* ubica la carpeta del archivo de Python
+uvicorn info:app --host 0.0.0.0 --port 8000         #* ejecuta el archivo info.py
